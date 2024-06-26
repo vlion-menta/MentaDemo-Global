@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		04D87965370B6A1DFA297E85 /* Pods_MentaDemo_Global_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF32187A69D48A63E2C1BA67 /* Pods_MentaDemo_Global_Example.framework */; };
+		0986EC292C2C1BBF0095DB66 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0986EC282C2C1BBF0095DB66 /* MainViewController.m */; };
+		0986EC402C2C1DA10095DB66 /* MentaBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0986EC2B2C2C1DA10095DB66 /* MentaBannerViewController.m */; };
+		0986EC412C2C1DA10095DB66 /* MentaInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0986EC2E2C2C1DA10095DB66 /* MentaInterstitialViewController.m */; };
+		0986EC422C2C1DA10095DB66 /* MentaNativeExpressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0986EC312C2C1DA10095DB66 /* MentaNativeExpressViewController.m */; };
+		0986EC432C2C1DA10095DB66 /* MentaSelfRenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0986EC342C2C1DA10095DB66 /* MentaSelfRenderViewController.m */; };
+		0986EC442C2C1DA10095DB66 /* MentaRewardVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0986EC372C2C1DA10095DB66 /* MentaRewardVideoViewController.m */; };
+		0986EC452C2C1DA10095DB66 /* MentaSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0986EC3A2C2C1DA10095DB66 /* MentaSplashViewController.m */; };
+		0986EC462C2C1DA10095DB66 /* MentaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0986EC3D2C2C1DA10095DB66 /* MentaViewController.m */; };
 		22E06CF686EFC98C95BBC5C7 /* Pods_MentaDemo_Global_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C275E57677C2108E0CC8AAB0 /* Pods_MentaDemo_Global_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -37,8 +45,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0986EC272C2C1BBF0095DB66 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		0986EC282C2C1BBF0095DB66 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		0986EC2A2C2C1DA10095DB66 /* MentaBannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MentaBannerViewController.h; sourceTree = "<group>"; };
+		0986EC2B2C2C1DA10095DB66 /* MentaBannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MentaBannerViewController.m; sourceTree = "<group>"; };
+		0986EC2D2C2C1DA10095DB66 /* MentaInterstitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MentaInterstitialViewController.h; sourceTree = "<group>"; };
+		0986EC2E2C2C1DA10095DB66 /* MentaInterstitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MentaInterstitialViewController.m; sourceTree = "<group>"; };
+		0986EC302C2C1DA10095DB66 /* MentaNativeExpressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MentaNativeExpressViewController.h; sourceTree = "<group>"; };
+		0986EC312C2C1DA10095DB66 /* MentaNativeExpressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MentaNativeExpressViewController.m; sourceTree = "<group>"; };
+		0986EC332C2C1DA10095DB66 /* MentaSelfRenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MentaSelfRenderViewController.h; sourceTree = "<group>"; };
+		0986EC342C2C1DA10095DB66 /* MentaSelfRenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MentaSelfRenderViewController.m; sourceTree = "<group>"; };
+		0986EC362C2C1DA10095DB66 /* MentaRewardVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MentaRewardVideoViewController.h; sourceTree = "<group>"; };
+		0986EC372C2C1DA10095DB66 /* MentaRewardVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MentaRewardVideoViewController.m; sourceTree = "<group>"; };
+		0986EC392C2C1DA10095DB66 /* MentaSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MentaSplashViewController.h; sourceTree = "<group>"; };
+		0986EC3A2C2C1DA10095DB66 /* MentaSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MentaSplashViewController.m; sourceTree = "<group>"; };
+		0986EC3C2C2C1DA10095DB66 /* MentaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MentaViewController.h; sourceTree = "<group>"; };
+		0986EC3D2C2C1DA10095DB66 /* MentaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MentaViewController.m; sourceTree = "<group>"; };
 		0D78F1F585F4A3B670862FA4 /* Pods-MentaDemo-Global_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MentaDemo-Global_Example.release.xcconfig"; path = "Target Support Files/Pods-MentaDemo-Global_Example/Pods-MentaDemo-Global_Example.release.xcconfig"; sourceTree = "<group>"; };
-		18F0EC2EB947CCE27378B489 /* MentaDemo-Global.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "MentaDemo-Global.podspec"; path = "../MentaDemo-Global.podspec"; sourceTree = "<group>"; };
+		18F0EC2EB947CCE27378B489 /* MentaDemo-Global.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "MentaDemo-Global.podspec"; path = "../MentaDemo-Global.podspec"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MentaDemo-Global_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MentaDemo-Global_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,11 +84,11 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		97AD88ABB3BEE613FE4A8061 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		97AD88ABB3BEE613FE4A8061 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A99958D93B21730A72DBA98F /* Pods-MentaDemo-Global_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MentaDemo-Global_Example.debug.xcconfig"; path = "Target Support Files/Pods-MentaDemo-Global_Example/Pods-MentaDemo-Global_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BAC1C6B6B55D74A9E0409AC1 /* Pods-MentaDemo-Global_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MentaDemo-Global_Tests.release.xcconfig"; path = "Target Support Files/Pods-MentaDemo-Global_Tests/Pods-MentaDemo-Global_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C275E57677C2108E0CC8AAB0 /* Pods_MentaDemo_Global_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MentaDemo_Global_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E037B70D42F4AC55629A0CBB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E037B70D42F4AC55629A0CBB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E1F6BCB7CB7D94A23A073B57 /* Pods-MentaDemo-Global_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MentaDemo-Global_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MentaDemo-Global_Tests/Pods-MentaDemo-Global_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EF32187A69D48A63E2C1BA67 /* Pods_MentaDemo_Global_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MentaDemo_Global_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -95,6 +119,83 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0986EC2C2C2C1DA10095DB66 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				0986EC2A2C2C1DA10095DB66 /* MentaBannerViewController.h */,
+				0986EC2B2C2C1DA10095DB66 /* MentaBannerViewController.m */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		0986EC2F2C2C1DA10095DB66 /* Interstitial */ = {
+			isa = PBXGroup;
+			children = (
+				0986EC2D2C2C1DA10095DB66 /* MentaInterstitialViewController.h */,
+				0986EC2E2C2C1DA10095DB66 /* MentaInterstitialViewController.m */,
+			);
+			path = Interstitial;
+			sourceTree = "<group>";
+		};
+		0986EC322C2C1DA10095DB66 /* NativeExpress */ = {
+			isa = PBXGroup;
+			children = (
+				0986EC302C2C1DA10095DB66 /* MentaNativeExpressViewController.h */,
+				0986EC312C2C1DA10095DB66 /* MentaNativeExpressViewController.m */,
+			);
+			path = NativeExpress;
+			sourceTree = "<group>";
+		};
+		0986EC352C2C1DA10095DB66 /* NativeSelfRender */ = {
+			isa = PBXGroup;
+			children = (
+				0986EC332C2C1DA10095DB66 /* MentaSelfRenderViewController.h */,
+				0986EC342C2C1DA10095DB66 /* MentaSelfRenderViewController.m */,
+			);
+			path = NativeSelfRender;
+			sourceTree = "<group>";
+		};
+		0986EC382C2C1DA10095DB66 /* RewardVideo */ = {
+			isa = PBXGroup;
+			children = (
+				0986EC362C2C1DA10095DB66 /* MentaRewardVideoViewController.h */,
+				0986EC372C2C1DA10095DB66 /* MentaRewardVideoViewController.m */,
+			);
+			path = RewardVideo;
+			sourceTree = "<group>";
+		};
+		0986EC3B2C2C1DA10095DB66 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				0986EC392C2C1DA10095DB66 /* MentaSplashViewController.h */,
+				0986EC3A2C2C1DA10095DB66 /* MentaSplashViewController.m */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		0986EC3E2C2C1DA10095DB66 /* Mediation */ = {
+			isa = PBXGroup;
+			children = (
+				0986EC2C2C2C1DA10095DB66 /* Banner */,
+				0986EC2F2C2C1DA10095DB66 /* Interstitial */,
+				0986EC322C2C1DA10095DB66 /* NativeExpress */,
+				0986EC352C2C1DA10095DB66 /* NativeSelfRender */,
+				0986EC382C2C1DA10095DB66 /* RewardVideo */,
+				0986EC3B2C2C1DA10095DB66 /* Splash */,
+				0986EC3C2C2C1DA10095DB66 /* MentaViewController.h */,
+				0986EC3D2C2C1DA10095DB66 /* MentaViewController.m */,
+			);
+			path = Mediation;
+			sourceTree = "<group>";
+		};
+		0986EC3F2C2C1DA10095DB66 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				0986EC3E2C2C1DA10095DB66 /* Mediation */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +233,9 @@
 		6003F593195388D20070C39A /* Example for MentaDemo-Global */ = {
 			isa = PBXGroup;
 			children = (
+				0986EC3F2C2C1DA10095DB66 /* Demo */,
+				0986EC272C2C1BBF0095DB66 /* MainViewController.h */,
+				0986EC282C2C1BBF0095DB66 /* MainViewController.m */,
 				6003F59C195388D20070C39A /* MENTAAppDelegate.h */,
 				6003F59D195388D20070C39A /* MENTAAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -193,7 +297,6 @@
 				E1F6BCB7CB7D94A23A073B57 /* Pods-MentaDemo-Global_Tests.debug.xcconfig */,
 				BAC1C6B6B55D74A9E0409AC1 /* Pods-MentaDemo-Global_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,6 +312,7 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				EE40473335324FE0FB72D5C7 /* [CP] Embed Pods Frameworks */,
+				ECAE6B9A7AEF44825F96AB63 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,6 +352,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = jdy;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 4ZY6EV6TFP;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +365,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -339,6 +447,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		ECAE6B9A7AEF44825F96AB63 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MentaDemo-Global_Example/Pods-MentaDemo-Global_Example-resources.sh",
+				"${PODS_ROOT}/MentaVlionGlobal/Resource/VlionGlobal.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VlionGlobal.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MentaDemo-Global_Example/Pods-MentaDemo-Global_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EE40473335324FE0FB72D5C7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -364,9 +490,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0986EC432C2C1DA10095DB66 /* MentaSelfRenderViewController.m in Sources */,
+				0986EC422C2C1DA10095DB66 /* MentaNativeExpressViewController.m in Sources */,
+				0986EC462C2C1DA10095DB66 /* MentaViewController.m in Sources */,
 				6003F59E195388D20070C39A /* MENTAAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* MENTAViewController.m in Sources */,
+				0986EC412C2C1DA10095DB66 /* MentaInterstitialViewController.m in Sources */,
+				0986EC452C2C1DA10095DB66 /* MentaSplashViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				0986EC442C2C1DA10095DB66 /* MentaRewardVideoViewController.m in Sources */,
+				0986EC292C2C1BBF0095DB66 /* MainViewController.m in Sources */,
+				0986EC402C2C1DA10095DB66 /* MentaBannerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +628,7 @@
 			baseConfigurationReference = A99958D93B21730A72DBA98F /* Pods-MentaDemo-Global_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4ZY6EV6TFP;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MentaDemo-Global/MentaDemo-Global-Prefix.pch";
 				INFOPLIST_FILE = "MentaDemo-Global/MentaDemo-Global-Info.plist";
@@ -510,6 +645,7 @@
 			baseConfigurationReference = 0D78F1F585F4A3B670862FA4 /* Pods-MentaDemo-Global_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4ZY6EV6TFP;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MentaDemo-Global/MentaDemo-Global-Prefix.pch";
 				INFOPLIST_FILE = "MentaDemo-Global/MentaDemo-Global-Info.plist";

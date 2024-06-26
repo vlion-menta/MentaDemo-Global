@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'MentaDemo-Global_Example' do
+  pod 'MentaDemo-Global', :path => '../'
+
+  target 'MentaDemo-Global_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

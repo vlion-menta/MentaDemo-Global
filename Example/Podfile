@@ -1,4 +1,4 @@
-source 'git@github.com:JiaDingYi/Menta-Specs.git'
+# source 'git@github.com:JiaDingYi/Menta-Specs.git'
 
 use_frameworks!
 
@@ -6,10 +6,12 @@ platform :ios, '11.0'
 
 target 'MentaDemo-Global_Example' do
   pod 'MentaDemo-Global', :path => '../'
-  pod 'MentaMediationGlobal'
-  pod 'MentaVlionGlobal'
-  pod 'MentaVlionGlobalAdapter'
-  pod 'MentaBaseGlobal'
+
+  pod 'MentaBaseGlobal',          '1.0.4'
+  pod 'MentaMediationGlobal',     '1.0.4'
+  pod 'MentaVlionGlobal',         '1.0.4'
+  pod 'MentaVlionGlobalAdapter',  '1.0.4'
+  
 
   target 'MentaDemo-Global_Tests' do
     inherit! :search_paths

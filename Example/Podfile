@@ -6,11 +6,12 @@ platform :ios, '11.0'
 
 target 'MentaDemo-Global_Example' do
   pod 'MentaDemo-Global', :path => '../'
-
-  pod 'MentaBaseGlobal',          '1.0.4'
-  pod 'MentaMediationGlobal',     '1.0.4'
-  pod 'MentaVlionGlobal',         '1.0.4'
-  pod 'MentaVlionGlobalAdapter',  '1.0.4'
+  
+  # pod 'MentaBaseGlobal', :path => '/Users/jdy/Desktop/Menta-Global/MentaBaseGlobal.podspec'
+  pod 'MentaBaseGlobal',          '1.0.18'
+  pod 'MentaMediationGlobal',     '1.0.18'
+  pod 'MentaVlionGlobal',         '1.0.18'
+  pod 'MentaVlionGlobalAdapter',  '1.0.18'
   
 
   target 'MentaDemo-Global_Tests' do

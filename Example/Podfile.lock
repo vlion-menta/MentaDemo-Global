@@ -1,20 +1,20 @@
 PODS:
-  - MentaBaseGlobal (1.0.4)
+  - MentaBaseGlobal (1.0.18)
   - MentaDemo-Global (0.1.0)
-  - MentaMediationGlobal (1.0.4):
-    - MentaBaseGlobal (= 1.0.4)
-  - MentaVlionGlobal (1.0.4):
-    - MentaBaseGlobal (= 1.0.4)
-  - MentaVlionGlobalAdapter (1.0.4):
-    - MentaMediationGlobal (= 1.0.4)
-    - MentaVlionGlobal (= 1.0.4)
+  - MentaMediationGlobal (1.0.18):
+    - MentaBaseGlobal (~> 1.0.18)
+  - MentaVlionGlobal (1.0.18):
+    - MentaBaseGlobal (~> 1.0.18)
+  - MentaVlionGlobalAdapter (1.0.18):
+    - MentaMediationGlobal (~> 1.0.18)
+    - MentaVlionGlobal (~> 1.0.18)
 
 DEPENDENCIES:
-  - MentaBaseGlobal (= 1.0.4)
+  - MentaBaseGlobal (= 1.0.18)
   - MentaDemo-Global (from `../`)
-  - MentaMediationGlobal (= 1.0.4)
-  - MentaVlionGlobal (= 1.0.4)
-  - MentaVlionGlobalAdapter (= 1.0.4)
+  - MentaMediationGlobal (= 1.0.18)
+  - MentaVlionGlobal (= 1.0.18)
+  - MentaVlionGlobalAdapter (= 1.0.18)
 
 SPEC REPOS:
   trunk:
@@ -28,12 +28,12 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MentaBaseGlobal: dbb29b8e6020fdb550f83fa72dce86532c7fa757
+  MentaBaseGlobal: 93dd98576bc1718352cee399fdfa460a13b7e7df
   MentaDemo-Global: 32057824b005f5938fd961a0307ce6077c5b3984
-  MentaMediationGlobal: 913b7b5c8c25ed33d2669b31ca2d135f26a341d9
-  MentaVlionGlobal: a1c08a345369a7f14cf65baa46f181cecf8e3ec9
-  MentaVlionGlobalAdapter: d6c28983dabdd1f3fbc7ca0b2e55883199041dcb
+  MentaMediationGlobal: 42ebb186ee60e11775cad373ea68919da68f7bfb
+  MentaVlionGlobal: bec7c9e5159019cd94c689ddcc7bb27dacdecbd7
+  MentaVlionGlobalAdapter: 8c95e24235815b66d36dd8d471df708177aac629
 
-PODFILE CHECKSUM: f442be4c9ecba9ee53ee938a64e4517a15bb2790
+PODFILE CHECKSUM: 0cdc418a5a0c5fb67e5477abf8a3cac0229f81d6
 
 COCOAPODS: 1.15.2

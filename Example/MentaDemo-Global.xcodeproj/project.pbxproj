@@ -45,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0908D68D2C46678D00247E2E /* CoreAudioTypes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioTypes.framework; path = System/Library/Frameworks/CoreAudioTypes.framework; sourceTree = SDKROOT; };
 		0986EC272C2C1BBF0095DB66 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		0986EC282C2C1BBF0095DB66 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		0986EC2A2C2C1DA10095DB66 /* MentaBannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MentaBannerViewController.h; sourceTree = "<group>"; };
@@ -220,6 +221,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0908D68D2C46678D00247E2E /* CoreAudioTypes.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -353,7 +355,7 @@
 				ORGANIZATIONNAME = jdy;
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = 4ZY6EV6TFP;
+						DevelopmentTeam = 3RTK89G5W5;
 					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -628,7 +630,7 @@
 			baseConfigurationReference = A99958D93B21730A72DBA98F /* Pods-MentaDemo-Global_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4ZY6EV6TFP;
+				DEVELOPMENT_TEAM = 3RTK89G5W5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MentaDemo-Global/MentaDemo-Global-Prefix.pch";
 				INFOPLIST_FILE = "MentaDemo-Global/MentaDemo-Global-Info.plist";
@@ -646,7 +648,7 @@
 			baseConfigurationReference = 0D78F1F585F4A3B670862FA4 /* Pods-MentaDemo-Global_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4ZY6EV6TFP;
+				DEVELOPMENT_TEAM = 3RTK89G5W5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MentaDemo-Global/MentaDemo-Global-Prefix.pch";
 				INFOPLIST_FILE = "MentaDemo-Global/MentaDemo-Global-Info.plist";

@@ -8,10 +8,10 @@ target 'MentaDemo-Global_Example' do
   pod 'MentaDemo-Global', :path => '../'
   
   # pod 'MentaBaseGlobal', :path => '/Users/jdy/Desktop/Menta-Global/MentaBaseGlobal.podspec'
-  pod 'MentaBaseGlobal',          '1.0.18'
-  pod 'MentaMediationGlobal',     '1.0.18'
-  pod 'MentaVlionGlobal',         '1.0.18'
-  pod 'MentaVlionGlobalAdapter',  '1.0.18'
+  pod 'MentaBaseGlobal',          '1.0.19'
+  pod 'MentaMediationGlobal',     '1.0.19'
+  pod 'MentaVlionGlobal',         '1.0.19'
+  pod 'MentaVlionGlobalAdapter',  '1.0.19'
   
 
   target 'MentaDemo-Global_Tests' do

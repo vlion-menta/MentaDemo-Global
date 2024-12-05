@@ -13,10 +13,10 @@
 @property (nonatomic, strong) MentaMediationInterstitial *interstitialAd;
 @property (nonatomic, strong) UIButton *btnLoad;
 @property (nonatomic, strong) UIButton *btnShow;
+@property (nonatomic, strong) UIButton *btnLoss;
 @property (nonatomic, assign) BOOL  isLoded;
 
-//@property (nonatomic, strong) UITextField *placementIDField;
-//@property (nonatomic, strong) UITextField *countdownField;
+@property (nonatomic, strong) UITextField *placementIDField;
 
 @end
 
@@ -27,29 +27,46 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
+    CGFloat buttonWidth = 100;
+    CGFloat buttonHeight = 40;
+    CGFloat centerX = self.view.frame.size.width / 2 - buttonWidth / 2;
+
     self.btnLoad = [UIButton buttonWithType:UIButtonTypeSystem];
-    self.btnLoad.frame = CGRectMake(100, 100, 100, 80);
+    self.btnLoad.frame = CGRectMake(centerX, 100, buttonWidth, buttonHeight);
     [self.btnLoad setTitle:@"加载广告" forState:UIControlStateNormal];
+    [self.btnLoad setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.btnLoad addTarget:self action:@selector(loadAd) forControlEvents:UIControlEventTouchUpInside];
+    self.btnLoad.backgroundColor = [UIColor blackColor];
+    self.btnLoad.layer.cornerRadius = 5;
     [self.view addSubview:self.btnLoad];
     
     self.btnShow = [UIButton buttonWithType:UIButtonTypeSystem];
-    self.btnShow.frame = CGRectMake(100, 200, 100, 80);
+    self.btnShow.frame = CGRectMake(centerX, 150, buttonWidth, buttonHeight);
     [self.btnShow setTitle:@"展现广告" forState:UIControlStateNormal];
+    [self.btnShow setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.btnShow addTarget:self action:@selector(showAd) forControlEvents:UIControlEventTouchUpInside];
+    self.btnShow.backgroundColor = [UIColor blackColor];
+    self.btnShow.layer.cornerRadius = 5;
     [self.view addSubview:self.btnShow];
     
-//    self.placementIDField = [[UITextField alloc] initWithFrame:CGRectMake(100, 300, 200, 50)];
-//    self.placementIDField.placeholder = @"P0291";
-//    self.placementIDField.borderStyle = UITextBorderStyleRoundedRect;
-//    self.placementIDField.keyboardType = UIKeyboardTypeNumberPad;
-//    [self.view addSubview:self.placementIDField];
-//    
-//    self.countdownField = [[UITextField alloc] initWithFrame:CGRectMake(100, 400, 200, 50)];
-//    self.countdownField.placeholder = @"enter count down here";
-//    self.countdownField.borderStyle = UITextBorderStyleRoundedRect;
-//    self.countdownField.keyboardType = UIKeyboardTypeNumberPad;
-//    [self.view addSubview:self.countdownField];
+    self.btnLoss = [UIButton buttonWithType:UIButtonTypeSystem];
+    self.btnLoss.frame = CGRectMake(centerX, 200, buttonWidth, buttonHeight);
+    [self.btnLoss setTitle:@"send bid fail" forState:UIControlStateNormal];
+    [self.btnLoss setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.btnLoss addTarget:self action:@selector(sendLossNotification) forControlEvents:UIControlEventTouchUpInside];
+    self.btnLoss.backgroundColor = [UIColor blackColor];
+    self.btnLoss.layer.cornerRadius = 5;
+    [self.view addSubview:self.btnLoss];
+    
+    self.placementIDField = [[UITextField alloc] initWithFrame:CGRectMake(centerX, 250, buttonWidth, buttonHeight)];
+    self.placementIDField.placeholder = @"P0022";
+    self.placementIDField.borderStyle = UITextBorderStyleNone;
+    self.placementIDField.layer.borderColor = [UIColor blackColor].CGColor;
+    self.placementIDField.layer.borderWidth = 2.0;
+    self.placementIDField.layer.cornerRadius = 5.0;
+    self.placementIDField.keyboardType = UIKeyboardTypeNumberPad;
+    self.placementIDField.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:self.placementIDField];
 }
 
 - (void)loadAd {
@@ -58,7 +75,13 @@
         self.interstitialAd = nil;
     }
     
-    self.interstitialAd = [[MentaMediationInterstitial alloc] initWithPlacementID:@"P0022"];
+    NSString *placementID = self.placementIDField.text;
+    if (!placementID || placementID.length == 0) {
+        placementID = @"P0023";
+//        placementID = @"P0025"; // web
+    }
+    
+    self.interstitialAd = [[MentaMediationInterstitial alloc] initWithPlacementID:placementID];
     self.interstitialAd.delegate = self;
     [self.interstitialAd loadAd];
 
@@ -71,7 +94,12 @@
         return;
     }
     
+    [self.interstitialAd sendWinnerNotificationWith:nil];
     [self.interstitialAd showAdFromRootViewController:self];
+}
+
+- (void)sendLossNotification {
+    [self.interstitialAd sendLossNotificationWithWinnerPrice:@"" info:@{@"loss_reason": @"101"}];
 }
 
 // 广告素材加载成功
@@ -123,7 +151,7 @@
 }
 
 // 广告关闭
--(void)menta_interstitialoClosed:(MentaMediationInterstitial *)interstitial {
+-(void)menta_interstitialClosed:(MentaMediationInterstitial *)interstitial {
     NSLog(@"%s", __FUNCTION__);
 }
 

@@ -11,6 +11,8 @@
 @interface MentaSelfRenderViewController () <MentaNativeSelfRenderDelegate>
 
 @property (nonatomic, strong) UIButton *btnLoad;
+@property (nonatomic, strong) UIButton *btnLoss;
+@property (nonatomic, strong) UITextField *placementIDField;
 @property (nonatomic, assign) BOOL isLoded;
 
 @property (nonatomic, strong) MentaMediationNativeSelfRender *nativeAd;
@@ -37,17 +39,46 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
 
+    CGFloat buttonWidth = 100;
+    CGFloat buttonHeight = 40;
+    CGFloat centerX = self.view.frame.size.width / 2 - buttonWidth / 2;
+
     self.btnLoad = [UIButton buttonWithType:UIButtonTypeSystem];
-    self.btnLoad.frame = CGRectMake(100, 100, 100, 80);
+    self.btnLoad.frame = CGRectMake(centerX, 100, buttonWidth, buttonHeight);
     [self.btnLoad setTitle:@"加载广告" forState:UIControlStateNormal];
+    [self.btnLoad setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.btnLoad addTarget:self action:@selector(loadAd) forControlEvents:UIControlEventTouchUpInside];
+    self.btnLoad.backgroundColor = [UIColor blackColor];
+    self.btnLoad.layer.cornerRadius = 5;
     [self.view addSubview:self.btnLoad];
     
     UIButton * btnShowInView = [UIButton buttonWithType:UIButtonTypeSystem];
-    btnShowInView.frame = CGRectMake(100, 200, 200, 80);
-    [btnShowInView setTitle:@"展现广告在self.view中" forState:UIControlStateNormal];
+    btnShowInView.frame = CGRectMake(centerX, 150, buttonWidth, buttonHeight);
+    [btnShowInView setTitle:@"展现广告" forState:UIControlStateNormal];
+    [btnShowInView setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [btnShowInView addTarget:self action:@selector(showAd) forControlEvents:UIControlEventTouchUpInside];
+    btnShowInView.backgroundColor = [UIColor blackColor];
+    btnShowInView.layer.cornerRadius = 5;
     [self.view addSubview:btnShowInView];
+    
+    self.btnLoss = [UIButton buttonWithType:UIButtonTypeSystem];
+    self.btnLoss.frame = CGRectMake(centerX, 200, buttonWidth, buttonHeight);
+    [self.btnLoss setTitle:@"send bid fail" forState:UIControlStateNormal];
+    [self.btnLoss setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.btnLoss addTarget:self action:@selector(sendLossNotification) forControlEvents:UIControlEventTouchUpInside];
+    self.btnLoss.backgroundColor = [UIColor blackColor];
+    self.btnLoss.layer.cornerRadius = 5;
+    [self.view addSubview:self.btnLoss];
+    
+    self.placementIDField = [[UITextField alloc] initWithFrame:CGRectMake(centerX, 250, buttonWidth, buttonHeight)];
+    self.placementIDField.placeholder = @"P0020";
+    self.placementIDField.borderStyle = UITextBorderStyleNone;
+    self.placementIDField.layer.borderColor = [UIColor blackColor].CGColor;
+    self.placementIDField.layer.borderWidth = 2.0;
+    self.placementIDField.layer.cornerRadius = 5.0;
+    self.placementIDField.keyboardType = UIKeyboardTypeNumberPad;
+    self.placementIDField.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:self.placementIDField];
 
     [self loadAd];
 }
@@ -63,7 +94,12 @@
         return;
     }
     
-    self.nativeAd = [[MentaMediationNativeSelfRender alloc] initWithPlacementID:@"P0020"];
+    NSString *placementID = self.placementIDField.text;
+    if (!placementID || placementID.length == 0) {
+//        placementID = @"P0020";
+        placementID = @"P0019";
+    }
+    self.nativeAd = [[MentaMediationNativeSelfRender alloc] initWithPlacementID:placementID];
     self.nativeAd.delegate = self;
     
     [self.nativeAd loadAd];
@@ -76,7 +112,12 @@
         return;
     }
     
+    [self.nativeAd sendWinnerNotificationWith:nil];
     [self createCustomNativeView];
+}
+
+- (void)sendLossNotification {
+    [self.nativeAd sendLossNotificationWithWinnerPrice:@"" info:@{@"loss_reason": @"101"}];
 }
 
 - (void)createCustomNativeView {
